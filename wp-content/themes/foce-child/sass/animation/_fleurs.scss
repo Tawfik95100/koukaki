@@ -1,0 +1,16 @@
+.story__article::after,
+.story h2::after,
+#studio h2::before,
+#studio h2::after,
+.site-footer::before,
+.site-footer::after,
+.site-footer ul::after,.flower_orange,
+.hibiscus_menu,
+.sunflower_menu{
+    animation: fleursquitourne var(--vitesse) linear infinite;
+}
+
+@keyframes fleursquitourne {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}

@@ -1,0 +1,47 @@
+//animation des titres scss
+.titre1,
+.titre2,
+.titre3,
+.titre4 {
+  display: inline-block;
+  position: relative;
+  opacity: 0;
+  transform: translateY(100px);
+  animation: 1s ease-in-out;
+  animation-name: animateTitre;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.titre1{
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+.titre2 {
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+}
+
+.titre3{
+  animation-delay: 15s;
+  animation-fill-mode: forwards;
+}
+
+.titre4{
+  animation-delay: 16s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animateTitre {
+  0% {
+    transform: translateY(100px);
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

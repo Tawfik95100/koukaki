@@ -1,0 +1,67 @@
+.banner{
+   background-image: none;
+    .banner_video{
+        position: absolute;
+        width: 100% !important;
+        z-index: 0;
+        top: 111px;
+    }
+
+    .logo {
+        z-index: 1;
+        width: 680.7px;
+    }
+
+    .banner_image{
+        position: absolute;
+        width: 100%;
+        z-index:-1;
+        top: 188px;
+    }
+    
+    #parallaxe {z-index: 1;
+    position: relative;
+    bottom: 50px;
+    }
+}
+
+@media (max-width:836px){
+    .banner {
+        min-height: 504px;
+        #parallaxe{
+        bottom: 100px;
+        .logo{
+            width: 370px;
+        }
+        .banner_image{
+            display: block;
+        }
+    }
+}
+}
+
+@media (max-width:767px){
+    
+    .banner_video{display: none;}
+    .banner{background-image: url('../assets/images/banner.png');
+    min-height: 497px;
+    background-size: cover;
+    width: 100%;
+.logo{
+    width: 330px;
+}
+.banner_image{
+    display: none;
+}
+}
+    }
+    
+    @media (max-width:700px){
+    .main-navigation {
+		height: 80px !important;}}
+
+        @media (max-width:378px){
+            .banner #parallaxe .logo{
+                width: 236px;
+            }
+        }

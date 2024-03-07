@@ -1,0 +1,49 @@
+.nomination{
+    background-image: url("../assets/images/fondorange.png");
+    background-size:contain ;
+    font-size: 32px;
+    text-align: left;
+}
+
+.oscars{
+    position: relative; 
+    display: flex;
+    margin: 0px auto 320px;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-footer{
+    flex-direction: column;
+    padding-top: 12em;
+}
+
+.oscarslogo{
+    width: 25%;
+}
+
+.oscars::before,.oscars::after{
+    content: "";
+    background-size:cover ;
+    position: absolute;
+    width: 180px;
+    height: 180px;
+}
+
+.site-footer::before{
+    left: 14em;
+    top: 5em;
+}
+
+.site-footer::after{
+    bottom: 39.8em;
+}
+
+@media(max-width:836px){
+    .nomination{
+        font-size: 25px;
+    }
+    .site-footer{
+        padding-top: 16em;
+    }
+}

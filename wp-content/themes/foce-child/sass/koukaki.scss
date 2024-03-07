@@ -1,0 +1,32 @@
+:root{
+    --vitesse:14s;
+}
+
+.site-main{
+    overflow: hidden;
+}
+
+.story #characters h3{
+    background-position: left;
+    text-align: left;
+    padding: 1.5em 2em;
+
+}
+
+@media (max-width:1430px){
+    .story #characters h3{
+        background-position: center;
+        text-align: center;
+    }
+}
+
+
+@import "animation/banner";
+@import "animation/nuage";
+@import "animation/fleurs";
+@import "animation/oscars";
+@import "animation/titreflottant";
+@import "animation/fadein";
+@import "animation/menuburger";
+@import "animation/fadeSection";
+@import "animation/titreSection";

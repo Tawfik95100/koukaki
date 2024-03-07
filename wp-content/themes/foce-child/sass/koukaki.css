@@ -1,0 +1,406 @@
+:root {
+  --vitesse:14s;
+}
+
+.site-main {
+  overflow: hidden;
+}
+
+.story #characters h3 {
+  background-position: left;
+  text-align: left;
+  padding: 1.5em 2em;
+}
+
+@media (max-width: 1430px) {
+  .story #characters h3 {
+    background-position: center;
+    text-align: center;
+  }
+}
+.banner {
+  background-image: none;
+}
+.banner .banner_video {
+  position: absolute;
+  width: 100% !important;
+  z-index: 0;
+  top: 111px;
+}
+.banner .logo {
+  z-index: 1;
+  width: 680.7px;
+}
+.banner .banner_image {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  top: 188px;
+}
+.banner #parallaxe {
+  z-index: 1;
+  position: relative;
+  bottom: 50px;
+}
+
+@media (max-width: 836px) {
+  .banner {
+    min-height: 504px;
+  }
+  .banner #parallaxe {
+    bottom: 100px;
+  }
+  .banner #parallaxe .logo {
+    width: 370px;
+  }
+  .banner #parallaxe .banner_image {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  .banner_video {
+    display: none;
+  }
+  .banner {
+    background-image: url("../assets/images/banner.png");
+    min-height: 497px;
+    background-size: cover;
+    width: 100%;
+  }
+  .banner .logo {
+    width: 330px;
+  }
+  .banner .banner_image {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .main-navigation {
+    height: 80px !important;
+  }
+}
+@media (max-width: 378px) {
+  .banner #parallaxe .logo {
+    width: 236px;
+  }
+}
+.story #place {
+  background-image: url("../assets/images/Studio_Koukaki-image_place.png");
+}
+
+.nuages {
+  margin-bottom: 57%;
+  position: relative;
+}
+
+.story__article::after,
+.story h2::after,
+#studio h2::before,
+#studio h2::after,
+.site-footer::before,
+.site-footer::after,
+.site-footer ul::after, .flower_orange,
+.hibiscus_menu,
+.sunflower_menu {
+  animation: fleursquitourne var(--vitesse) linear infinite;
+}
+
+@keyframes fleursquitourne {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.nomination {
+  background-image: url("../assets/images/fondorange.png");
+  background-size: contain;
+  font-size: 32px;
+  text-align: left;
+}
+
+.oscars {
+  position: relative;
+  display: flex;
+  margin: 0px auto 320px;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-footer {
+  flex-direction: column;
+  padding-top: 12em;
+}
+
+.oscarslogo {
+  width: 25%;
+}
+
+.oscars::before, .oscars::after {
+  content: "";
+  background-size: cover;
+  position: absolute;
+  width: 180px;
+  height: 180px;
+}
+
+.site-footer::before {
+  left: 14em;
+  top: 5em;
+}
+
+.site-footer::after {
+  bottom: 39.8em;
+}
+
+@media (max-width: 836px) {
+  .nomination {
+    font-size: 25px;
+  }
+  .site-footer {
+    padding-top: 16em;
+  }
+}
+@keyframes floating {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    transform: translateX(-9px) translateY(9);
+  }
+  50% {
+    transform: translateX(-9px) translateY(9px);
+  }
+  75% {
+    transform: translateX(9px) translateY(9px);
+  }
+  100% {
+    transform: translateX(9px) translateY(-9px);
+  }
+}
+.logo, .chat_bleue,
+.chat_orange,
+.chat_gris {
+  animation: floating 4s infinite;
+}
+
+.banner_video {
+  animation: fadedown 3s;
+}
+
+@keyframes fadedown {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.bouton-menu {
+  position: relative;
+  float: right;
+  top: 29px;
+  cursor: pointer;
+  right: 121px;
+}
+
+.croix {
+  display: none;
+}
+
+.burger {
+  display: block;
+}
+
+.liste_menu {
+  display: none;
+  opacity: 1;
+  background-color: #FFF5E9;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.lien {
+  padding: 0;
+  margin: 0;
+}
+.lien li {
+  text-align: center;
+  list-style: none;
+  padding-bottom: 20px;
+}
+.lien li a {
+  font-size: 40px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.lien li a:hover {
+  filter: drop-shadow(0px 0px 5px #FF5C00);
+}
+
+.liste_liens {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logo_menu {
+  padding: 20px 0px;
+  width: 154.12px;
+}
+
+.nom {
+  padding-top: 39px;
+  font-size: 16px;
+  color: black;
+}
+
+.chat_bleue,
+.chat_orange,
+.chat_gris,
+.flower_orange,
+.hibiscus_menu,
+.sunflower_menu {
+  position: absolute;
+}
+
+.chat_bleue {
+  width: 109.22px;
+  height: 98.63px;
+  top: 170px;
+  left: 267px;
+}
+
+.chat_orange {
+  width: 105.91px;
+  height: 95.65px;
+  bottom: 110px;
+  left: 79px;
+}
+
+.chat_gris {
+  width: 123.92px;
+  height: 111.91px;
+  top: 370px;
+  left: 1076px;
+}
+
+.flower_orange {
+  width: 70.76px;
+  height: 70.76px;
+  bottom: 300px;
+  left: 213px;
+}
+
+.hibiscus_menu {
+  width: 30%;
+  bottom: -80px;
+  left: 1143px;
+}
+
+.liste_menu::before {
+  content: url("../assets/images/Orchid.png");
+  width: 172.57px;
+  height: 168.24px;
+  top: 157px;
+  left: -59px;
+  position: absolute;
+  animation: fleursquitourne 14s linear infinite;
+}
+
+.liste_menu::after {
+  content: url("../assets/images/Random_flower.png");
+  top: 165px;
+  left: 1239px;
+  position: absolute;
+  animation: fleursquitourne 14s linear infinite;
+}
+
+.sunflower_menu {
+  top: 130px;
+  left: 950px;
+}
+
+@media (max-width: 836px) {
+  .chat_bleue,
+  .chat_orange,
+  .chat_gris,
+  .flower_orange,
+  .hibiscus_menu,
+  .sunflower_menu,
+  .liste_menu::after,
+  .liste_menu::before {
+    display: none;
+  }
+}
+.fade-in {
+  opacity: 0;
+}
+
+.fade-in.visible {
+  animation: fadeInUp 3s forwards;
+  opacity: 1;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.titre1,
+.titre2,
+.titre3,
+.titre4 {
+  display: inline-block;
+  position: relative;
+  opacity: 0;
+  transform: translateY(100px);
+  animation: 1s ease-in-out;
+  animation-name: animateTitre;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.titre1 {
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+.titre2 {
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+}
+
+.titre3 {
+  animation-delay: 15s;
+  animation-fill-mode: forwards;
+}
+
+.titre4 {
+  animation-delay: 16s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animateTitre {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}/*# sourceMappingURL=koukaki.css.map */

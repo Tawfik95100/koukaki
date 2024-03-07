@@ -1,0 +1,26 @@
+@keyframes floating {
+    0% {
+      transform: translateX(0) translateY(0); 
+    }
+    25% {
+      transform: translateX(-9px) translateY(9); 
+    }
+    50% {
+      transform: translateX(-9px) translateY(9px); 
+    }
+    75% {
+      transform: translateX(9px) translateY(9px);
+    }
+    100% {
+      transform: translateX(9px) translateY(-9px); 
+    }
+  }
+  
+  .logo,.chat_bleue,
+  .chat_orange,
+  .chat_gris {
+    animation: floating 4s infinite;
+  }
+
+
+  

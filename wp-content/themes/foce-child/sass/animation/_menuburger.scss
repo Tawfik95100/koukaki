@@ -1,0 +1,142 @@
+.bouton-menu{
+    position: relative;
+    float: right;
+    top: 29px;
+    cursor: pointer;
+    right: 121px;
+}
+
+.croix{
+    display: none;
+}
+
+.burger{
+    display: block;
+}
+
+.liste_menu{
+    display: none;
+    opacity: 1;
+    background-color: #FFF5E9;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.lien{
+    padding: 0;
+    margin: 0;
+    li{
+        text-align: center;
+    list-style: none;
+    padding-bottom: 20px;
+    a{
+        font-size: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    }
+    a:hover{
+      filter: drop-shadow(0px 0px 5px #FF5C00);
+    }
+    }
+}
+
+.liste_liens{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo_menu{
+    padding: 20px 0px;
+    width: 154.12px;
+}
+
+.nom{
+    padding-top: 39px;
+    font-size: 16px;
+    color: black;
+}
+
+.chat_bleue,
+.chat_orange,
+.chat_gris,
+.flower_orange,
+.hibiscus_menu,
+.sunflower_menu{
+    position: absolute;
+}
+
+.chat_bleue{
+    width: 109.22px;
+height: 98.63px;
+top: 170px;
+left: 267px;
+}
+
+.chat_orange{
+    width: 105.91px;
+height: 95.65px;
+bottom: 110px;
+left: 79px;
+}
+
+.chat_gris{
+    width: 123.92px;
+    height: 111.91px;
+    top:370px;
+    left: 1076px;
+    }
+
+.flower_orange{
+    width: 70.76px;
+    height: 70.76px;
+    bottom: 300px;
+    left: 213px;
+    }
+
+.hibiscus_menu{
+     width: 30%;
+bottom: -80px;
+left: 1143px;
+}
+
+.liste_menu::before{
+    content: url('../assets/images/Orchid.png');
+    width: 172.57px;
+height: 168.24px;
+top: 157px;
+left: -59px;
+position: absolute;
+animation: fleursquitourne 14s linear infinite;
+}
+
+.liste_menu::after{
+    content: url('../assets/images/Random_flower.png');
+    top: 165px;
+    left: 1239px;
+ position: absolute;
+ animation: fleursquitourne 14s linear infinite;
+}
+
+.sunflower_menu{
+    top: 130px;
+    left: 950px;
+    }
+
+@media(max-width:836px){
+.chat_bleue,
+.chat_orange,
+.chat_gris,
+.flower_orange,
+.hibiscus_menu,
+.sunflower_menu,
+.liste_menu::after,
+.liste_menu::before
+{
+    display: none;
+}
+    }
